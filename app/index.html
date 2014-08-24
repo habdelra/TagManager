@@ -21,6 +21,7 @@
     <script src="assets/tag-manager.js"></script>
     <script>
       window.TagManager = require('tag-manager/app')['default'].create(TagManagerENV.APP);
+      window.TagManager.ApplicationAdapter = require('tag-manager/adapter/fixture')['default'];
     </script>
   </body>
 </html>

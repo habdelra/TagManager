@@ -1,0 +1,9 @@
+<div>
+  <b>Hierarchy: {{name}}</b>
+  {{#each categoryList}}
+    <div class="category-list">
+      <div>Category: {{name}}</div>
+      {{category-tags category=this store=store}}
+    </div>
+  {{/each}}
+</div>

@@ -5,6 +5,9 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.resource('heirarchies', { path: '/heirarchies' }, function(){
+    this.resource('heirarchy', { path: '/:heirarchy_id' });
+  });
 });
 
 export default Router;

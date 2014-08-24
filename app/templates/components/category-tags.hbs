@@ -1,0 +1,16 @@
+<div class="tag-filtered-list">
+<div>Approved Tags:</div>
+  {{#each approvedTags}}
+    <div class="tag">{{name}} status: {{status}}</div>
+  {{else}}
+    <div class="tag">--no approved tags--</div>
+  {{/each}}
+</div>
+<div class="tag-filtered-list">
+<div>Unapproved Tags:</div>
+  {{#each unapprovedTags}}
+    <div class="tag">{{name}} status: {{status}}</div>
+  {{else}}
+    <div class="tag">--no unapproved tags--</div>
+  {{/each}}
+</div>

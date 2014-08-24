@@ -1,3 +1,18 @@
 html, body {
   margin: 20px;
 }
+
+.category-list {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+.tag-filtered-list {
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.tag {
+  margin-left: 20px;
+}
