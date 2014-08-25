@@ -16,3 +16,7 @@ html, body {
 .tag {
   margin-left: 20px;
 }
+
+.selected button {
+  background: pink;
+}
