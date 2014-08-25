@@ -1,13 +1,13 @@
-import loadHeirarchyFixtures from '../models/heirarchy-fixtures';
-import loadCategoryFixtures  from '../models/category-fixtures';
+import loadHierarchyFixtures from '../models/hierarchy-fixtures';
+import loadProductFixtures   from '../models/product-fixtures';
 import loadTagFixtures       from '../models/tag-fixtures';
 
 export default {
   name: 'fixtures',
 
   initialize: function() {
-    loadHeirarchyFixtures();
-    loadCategoryFixtures();
+    loadHierarchyFixtures();
+    loadProductFixtures();
     loadTagFixtures();
   }
 };

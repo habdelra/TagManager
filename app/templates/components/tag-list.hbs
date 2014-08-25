@@ -1,7 +1,8 @@
 <div class="tag-filtered-list">
 <div>Approved Tags:</div>
+  {{input type="checkbox" checked=isChecked}}
   {{#each approvedTags}}
-    <div class="tag">{{name}} status: {{status}}</div>
+    {{tag-item tag=this}}
   {{else}}
     <div class="tag">--no approved tags--</div>
   {{/each}}
@@ -9,7 +10,7 @@
 <div class="tag-filtered-list">
 <div>Unapproved Tags:</div>
   {{#each unapprovedTags}}
-    <div class="tag">{{name}} status: {{status}}</div>
+    {{tag-item tag=this}}
   {{else}}
     <div class="tag">--no unapproved tags--</div>
   {{/each}}

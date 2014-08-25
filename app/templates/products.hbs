@@ -1,0 +1,9 @@
+Products:
+
+{{#each}}
+  <div>{{#link-to 'product' this}}{{this.name}}{{/link-to}}</div>
+{{/each}}
+
+<hr>
+
+{{outlet}}

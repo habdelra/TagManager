@@ -1,7 +1,7 @@
-import Heirarchy from './heirarchy';
+import Product from './product';
 
 export default function() {
-  Heirarchy.reopenClass({
+  Product.reopenClass({
     FIXTURES: [
       { id: '1', name: 'Learning Objectives' },
       { id: '2', name: 'Difficulty' }

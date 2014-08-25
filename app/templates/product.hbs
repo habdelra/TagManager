@@ -1,0 +1,9 @@
+<div>
+  <b>Product: {{name}}</b>
+  {{#each hierarchyList}}
+    <div class="hierarchy-list">
+      <div>Hierarchy: {{name}}</div>
+      {{tag-list hierarchy=this store=store selectAll="selectAll"}}
+    </div>
+  {{/each}}
+</div>

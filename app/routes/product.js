@@ -7,9 +7,9 @@ export default Ember.Route.extend({
   setupController: function(controller, model) {
     this._super(controller, model);
 
-    this.store.find('category', { heirarchy: get(model, 'id') })
-    .then(function(categories){
-      set(controller, 'categoryList', categories);
+    this.store.find('hierarchy', { product: get(model, 'id') })
+    .then(function(hierarchies){
+      set(controller, 'hierarchyList', hierarchies);
     });
   }
 });

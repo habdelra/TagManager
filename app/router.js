@@ -5,8 +5,8 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.resource('heirarchies', { path: '/heirarchies' }, function(){
-    this.resource('heirarchy', { path: '/:heirarchy_id' });
+  this.resource('products', { path: '/products' }, function(){
+    this.resource('product', { path: '/:product_id' });
   });
 });
 
